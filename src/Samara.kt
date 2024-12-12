@@ -3,7 +3,7 @@ class Samara(
     romanPrize: Double,
     sicilianPrize: Double,
     fourcheezPrize: Double,
-   // val coffeePrize: Double,
+   //// val coffeePrize: Double,
     val discount: Double,
     val sauce1Prize: Double,
     val sauce2Prize: Double

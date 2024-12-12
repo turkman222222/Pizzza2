@@ -31,4 +31,4 @@ class Moskow(
         calculateTotalSum()
         printCheck()
     }
-}//
+}/////
