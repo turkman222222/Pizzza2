@@ -8,11 +8,20 @@ open class Pizza(
     var fourcheezcount = 0
     var romancount = 0
     var siciliancount = 0
-    var checkCount = 0
-    var discountSum = 0.0
-    var coffeeCount = 0
-    var coffeeSum = 0.0
-    var revenue = 0.0
+    var totalSum: Double = 0.0
+
+    fun calculateTotalSum() {
+        totalSum = (pepperonicount * peperoniPrize) + (fourcheezcount * fourcheezPrize) + (romancount * romanPrize) + (siciliancount * sicilianPrize)
+    }
+
+    fun printCheck() {
+        println("Ваш чек:")
+        println("Пепперони: $pepperonicount x $peperoniPrize = ${pepperonicount * peperoniPrize}")
+        println("4 сыра: $fourcheezcount x $fourcheezPrize = ${fourcheezcount * fourcheezPrize}")
+        println("Римская: $romancount x $romanPrize = ${romancount * romanPrize}")
+        println("Сицилийская: $siciliancount x $sicilianPrize = ${siciliancount * sicilianPrize}")
+        println("Итого: $totalSum")
+    }
 
     open fun peppperoni() {
         pepperonicount++
@@ -34,13 +43,10 @@ open class Pizza(
         println("Спасибо за покупку сицилийской пиццы")
     }
 
-    open fun showCheck() {
-        checkCount++
-        println("Спасибо за показ чека")
-    }
-
-    open fun buyCoffee() {
-        coffeeCount++
-        println("Спасибо за покупку кофе")
+    open fun showStats() {
+        println("Количество проданных пепперони: $pepperonicount")
+        println("Количество проданных 4 сыра: $fourcheezcount")
+        println("Количество проданных римских пицц: $romancount")
+        println("Количество проданных сицилийских пицц: $siciliancount")
     }
 }
