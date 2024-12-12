@@ -1,29 +1,26 @@
-class Moskow (
-    peperoniPrize: Double, romanPrize: Double,
-    sicilianPrize: Double, fourcheezPrize:Double
-
-):Pizza(
-    peperoniPrize,romanPrize,
-    sicilianPrize,fourcheezPrize
-
-){
+class Moskow(
+    peperoniPrize: Double,
+    romanPrize: Double,
+    sicilianPrize: Double,
+    fourcheezPrize: Double
+) : Pizza(peperoniPrize, romanPrize, sicilianPrize, fourcheezPrize) {
     override fun peppperoni() {
-        pepperonicount++
-        println("спасибо за покупку пепперони в Москве")
+        super.peppperoni()
+        println("в Москве")
     }
 
     override fun fourcheez() {
-        fourcheezcount++
-        println("спасибо за покупку 4 сыра в Москве")
+        super.fourcheez()
+        println("в Москве")
     }
 
     override fun roman() {
-        romancount++
-        println("спасибо за покупку римской пиццы в Москве")
+        super.roman()
+        println("в Москве")
     }
 
     override fun sicilian() {
-        siciliancount++
-        println("спасибо за покупку сицилийской в Москве")
+        super.sicilian()
+        println("в Москве")
     }
 }
