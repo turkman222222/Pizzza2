@@ -31,4 +31,4 @@ class Kazan(
         calculateTotalSum()
         printCheck()
     }
-}
+}//

@@ -1,6 +1,6 @@
 import kotlin.system.exitProcess
 
-import kotlin.system.exitProcess
+
 
 fun main() {
     val spb = SPB(
@@ -18,7 +18,7 @@ fun main() {
     val samara = Samara(
         peperoniPrize = 180.0, romanPrize = 270.5,
         sicilianPrize = 170.5, fourcheezPrize = 250.4,
-        coffeePrize = 50.0,
+        // coffeePrize = 50.0,
         discount = 0.1,
         sauce1Prize = 20.0,
         sauce2Prize = 30.0
@@ -153,18 +153,18 @@ fun main() {
         println("Хотите Повторить покупку?")
         println("1. Да")
         println("4. Нет")
-        val statss = readLine()
+        //val statss = readLine()
 
-        if (statss == "1") {
+        // if (statss == "1") {
             if (city == "1") {
                 moskow.showStats()
             } else if (city == "2") {
                 spb.showStats()
             } else if (city == "3") {
                 kazan.showStats()
-            } else if (city == "4") {
+            } //else if (city == "4") {
                 samara.showStats()
             }
         }
     }
-}
+//}

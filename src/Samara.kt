@@ -3,7 +3,7 @@ class Samara(
     romanPrize: Double,
     sicilianPrize: Double,
     fourcheezPrize: Double,
-    val coffeePrize: Double,
+   // val coffeePrize: Double,
     val discount: Double,
     val sauce1Prize: Double,
     val sauce2Prize: Double
@@ -57,7 +57,7 @@ class Samara(
         println("Спасибо за покупку соуса 1")
         totalSum += sauce1Prize
     }
-
+//
     fun buySauce2() {
         sauce2Count++
         println("Спасибо за покупку соуса 2")
